@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO Dior Edition -->
-    <title>Enzo Ernoux | Chef de Projet Marketing Retail Fashion</title>
+    <title>Enzo Ernoux | Responsable Marketing & Offre</title>
     <meta name="description" content="Expert en Marketing Retail, Stratégie d'Offre et Expérience Client. Accompagnement du déploiement mondial des activations mode et luxe.">
     
-    <!-- Favicon Luxe -->
+    <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23003d5b%22>E</text></svg>">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
     
     <style>
         :root {
-            --primary: #003d5b; /* Couleur sobre et élégante */
+            --primary: #003d5b;
             --accent: #00a8e8;
             --text: #2d3436;
             --light: #f4f7f6;
@@ -60,7 +60,7 @@
         }
 
         h1 { font-size: 2.8rem; letter-spacing: 5px; text-transform: uppercase; font-weight: 700; position: relative; z-index: 2; }
-        .subtitle { font-size: 1.1rem; font-weight: 400; opacity: 0.9; position: relative; z-index: 2; margin-top: 5px; color: var(--accent); letter-spacing: 1px; }
+        .subtitle { font-size: 1.1rem; font-weight: 400; opacity: 0.9; position: relative; z-index: 2; margin-top: 5px; color: var(--accent); letter-spacing: 1px; max-width: 800px; margin-left: auto; margin-right: auto; }
         .availability { font-size: 0.9rem; font-style: italic; margin-top: 15px; opacity: 0.7; position: relative; z-index: 2; }
 
         .hero-contact { position: relative; z-index: 2; margin-top: 25px; display: flex; justify-content: center; align-items: center; gap: 30px; flex-wrap: wrap; }
@@ -75,7 +75,7 @@
             background: var(--white);
             color: var(--primary);
             text-decoration: none;
-            border-radius: 2px; /* Style plus luxe/rectiligne */
+            border-radius: 2px;
             font-weight: 600;
             font-size: 0.85rem;
             text-transform: uppercase;
@@ -86,6 +86,7 @@
         }
         .btn-pdf:hover { background: var(--accent); color: white; transform: translateY(-2px); }
 
+        /* CHIFFRES CLÉS - Correction alignement et hauteur */
         .metrics-container {
             display: flex;
             justify-content: center;
@@ -98,16 +99,22 @@
 
         .metric-card {
             background: var(--white);
-            padding: 35px 25px;
+            padding: 30px 25px;
             border-radius: 4px;
             box-shadow: 0 15px 35px rgba(0,0,0,0.08);
             text-align: center;
             flex: 1 1 280px;
             max-width: 350px;
             border-top: 4px solid var(--primary);
+            
+            /* Forcer la hauteur égale et le centrage vertical */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 180px; 
         }
 
-        .metric-card h3 { font-size: 1.4rem; color: var(--primary); margin-bottom: 10px; line-height: 1.2; font-weight: 700; }
+        .metric-card h3 { font-size: 1.3rem; color: var(--primary); margin-bottom: 12px; line-height: 1.3; font-weight: 700; }
         .metric-card p { font-size: 0.75rem; text-transform: uppercase; color: #666; font-weight: 600; letter-spacing: 1px; }
 
         .vision-section {
@@ -128,12 +135,20 @@
         .info-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 40px; margin-bottom: 60px; }
         .card { background: white; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
 
+        /* Correction couleur titre Langues */
+        .lang-card { background: var(--primary); color: white; padding: 35px; border-radius: 4px; }
+        .lang-card h2 { color: white; }
+        .lang-card h2::after { background: var(--accent); }
+        .lang-item { margin-bottom: 15px; }
+        .lang-header { display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 8px; }
+        .lang-bar { width: 100%; height: 6px; background: rgba(255,255,255,0.1); border-radius: 5px; }
+        .lang-fill { height: 100%; background: var(--accent); border-radius: 5px; }
+
         .experience-item {
             background: var(--white);
             padding: 40px;
             margin-bottom: 30px;
             border-bottom: 1px solid #eee;
-            transition: 0.3s;
         }
         .exp-head { display: flex; justify-content: space-between; margin-bottom: 15px; align-items: center; flex-wrap: wrap; }
         .exp-tag { font-size: 0.75rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 1px; }
@@ -146,21 +161,13 @@
         .soft-skills-container { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
         .soft-skill-tag { border: 1px solid #ddd; color: var(--primary); padding: 8px 18px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
 
-        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
-        .skill-card { background: white; padding: 35px; border-top: 3px solid var(--primary); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
-        .skill-card h3 { color: var(--primary); font-size: 1.1rem; margin-bottom: 15px; text-transform: uppercase; }
-
-        .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
-        .tool-category { background: white; padding: 25px; border: 1px solid #eee; }
-        .tool-category h4 { color: var(--primary); font-size: 0.9rem; margin-bottom: 10px; text-transform: uppercase; }
-
         footer { background: #111; color: white; padding: 60px 20px; text-align: center; letter-spacing: 1px; }
 
         @media (max-width: 768px) {
             h1 { font-size: 1.8rem; }
             .info-grid { grid-template-columns: 1fr; }
             .hero-contact { flex-direction: column; gap: 15px; }
-            .vision-section { padding: 30px 20px; }
+            .metric-card { min-height: auto; padding: 25px; }
         }
     </style>
 </head>
@@ -169,9 +176,8 @@
     <header role="banner">
         <img src="photo.jpg" alt="Enzo Ernoux" class="profile-img">
         <h1>Enzo Ernoux</h1>
-        <!-- TITRE ADAPTÉ DIOR -->
-        <p class="subtitle">Chef de Projet Marketing Retail Fashion — Stratégie d’Activation & Expérience Client</p>
-        <p class="availability">Expertise en déploiement mondial et orchestration de lancements de collections</p>
+        <p class="subtitle">Responsable marketing & offre — Stratégie produit, retail et pilotage transverse</p>
+        <p class="availability">Ouvert aux opportunités en stratégie d’offre, product marketing et retail</p>
         
         <nav class="hero-contact">
             <a href="mailto:ernouxe@gmail.com"><i class="fas fa-envelope"></i> ernouxe@gmail.com</a>
@@ -212,15 +218,15 @@
             
             <article class="experience-item">
                 <div class="exp-head">
-                    <h3>Chef de Projet Marketing Stratégique & Offre</h3>
+                    <h3>Chargé de projet marketing stratégique & développement de l’offre</h3>
                     <span class="exp-tag">2023 - Présent</span>
                 </div>
                 <span class="exp-company">CMP | Expert Retail Worldwide</span>
                 <ul>
-                    <li><strong>Orchestration 360° :</strong> Développement et pilotage de +30 collections, de l’étude d'opportunité au lancement mondial.</li>
-                    <li><strong>Redynamisation de Catégorie :</strong> Refonte stratégique d'une BU ayant généré une croissance de <strong>+27% du CA en 1 an</strong>.</li>
-                    <li><strong>Retail Excellence :</strong> Conception et suivi de +50m linéaires de concepts merchandising avec respect strict de l'image de marque.</li>
-                    <li><strong>Coordination Transverse :</strong> Lien étroit entre Studio Graphique, Achats et Logistique pour les envois internationaux de pièces prototypes.</li>
+                    <li><strong>Pilotage stratégique :</strong> Développement et pilotage de plus de 30 collections B2B et B2C, de l’étude d’opportunité au lancement commercial.</li>
+                    <li><strong>Pilotage du portefeuille :</strong> analyse de la performance des références et recommandations de maintien, d’évolution ou d’arrêt.</li>
+                    <li><strong>Construction de l’offre :</strong> études de marché, veille concurrentielle multisectorielle, définition des positionnements prix/cible/promesse et pilotage des chartes packaging.</li>
+                    <li><strong>Redynamisation de Catégorie :</strong> Refonte stratégique d'une BU (Cuisine) ayant généré une croissance de <strong>+27% du CA en 1 an</strong>.</li>
                 </ul>
             </article>
 
@@ -231,60 +237,47 @@
                 </div>
                 <span class="exp-company">GRDF | Stratégie Grand Public</span>
                 <ul>
-                    <li><strong>Marketing Opérationnel :</strong> Accompagnement des zones sur les problématiques de targeting client 360°.</li>
-                    <li><strong>Activation Digitale :</strong> Création d'outils de professionnalisation et pilotage de campagnes B2C à fort engagement.</li>
+                    <li><strong>Référent marketing Île-de-France — Marché Grand Public :</strong> accompagnement des équipes régionales sur les problématiques marketing.</li>
+                    <li><strong>Développement marketing :</strong> création d’outils de professionnalisation (gaz vert), études de marché et campagnes digitales B2C.</li>
+                    <li><strong>Analyse de performance :</strong> suivi des actions marketing et formulation de recommandations.</li>
                 </ul>
             </article>
         </section>
 
-        <section id="competences">
-            <h2>Expertises & Savoir-faire</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Retail Marketing & VM</h3>
-                    <p style="font-size: 0.9rem; color: #555;">Déploiement d'activations in-store, suivi des guidelines image et optimisation du parcours client.</p>
+        <section id="infos">
+            <div class="info-grid">
+                <div class="card">
+                    <h2>Diplômes</h2>
+                    <p><strong>Mastère Management et Stratégie des Entreprises, option digital.</strong><br>Icadémie, Paris | 2021 – 2023</p>
+                    <p style="margin-top: 15px;"><strong>Bachelor Marketing et Vente option E-commerce</strong><br>Icadémie, Paris | 2020 – 2021</p>
+                    <p style="margin-top: 15px;"><strong>BTS Conception & Réalisation de Système Automatique</strong><br>Lycée Pierre de Coubertin, Meaux | 2018 – 2019</p>
                 </div>
-                <div class="skill-card">
-                    <h3>Orchestration Worldwide</h3>
-                    <p style="font-size: 0.9rem; color: #555;">Gestion de projets complexes, coordination siège/marchés et pilotage logistique international.</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Analyse & Performance</h3>
-                    <p style="font-size: 0.9rem; color: #555;">Tracking des KPI retail, monitoring de rentabilité et recommandations d'optimisation post-événements.</p>
-                </div>
-            </div>
 
-            <div style="margin-top: 40px;">
-                <h2 style="font-size: 1.3rem; border: none; padding: 0;">Qualités de la Maison (Soft Skills)</h2>
-                <div class="soft-skills-container">
-                    <span class="soft-skill-tag">Sens du détail & Rigueur</span>
-                    <span class="soft-skill-tag">Culture du résultat</span>
-                    <span class="soft-skill-tag">Agilité & Proactivité</span>
-                    <span class="soft-skill-tag">Excellent Relationnel</span>
-                    <span class="soft-skill-tag">Esprit d'équipe</span>
-                </div>
-            </div>
-
-            <h2 style="margin-top: 60px;">Outils & Langues</h2>
-            <div class="tools-grid">
-                <div class="tool-category">
-                    <h4><i class="fas fa-globe"></i> Langues</h4>
-                    <p>Français (Natif), Anglais (C1 - Courant), Italien (A1), Japonais (Notions).</p>
-                </div>
-                <div class="tool-category">
-                    <h4><i class="fas fa-tasks"></i> Gestion & Projet</h4>
-                    <p>Notion, Outils de tracking KPI, Gestion logistique internationale (Carnet ATA/Fret).</p>
-                </div>
-                <div class="tool-category">
-                    <h4><i class="fas fa-pencil-ruler"></i> Design & VM</h4>
-                    <p>Briefrage Studio Graphique, Maîtrise des chartes packaging et guidelines VM.</p>
+                <div class="lang-card">
+                    <h2>Langues</h2>
+                    <div class="lang-item">
+                        <div class="lang-header"><span>Français</span> <span>Natif</span></div>
+                        <div class="lang-bar"><div class="lang-fill" style="width: 100%;"></div></div>
+                    </div>
+                    <div class="lang-item">
+                        <div class="lang-header"><span>Anglais</span> <span>C1</span></div>
+                        <div class="lang-bar"><div class="lang-fill" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="lang-item">
+                        <div class="lang-header"><span>Italien</span> <span>A1</span></div>
+                        <div class="lang-bar"><div class="lang-fill" style="width: 20%;"></div></div>
+                    </div>
+                    <div class="lang-item">
+                        <div class="lang-header"><span>Japonais</span> <span>Notions</span></div>
+                        <div class="lang-bar"><div class="lang-fill" style="width: 25%;"></div></div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p style="opacity: 0.5; font-size: 0.75rem; text-transform: uppercase;">© 2026 ENZO ERNOUX - EXCELLENCE & RETAIL STRATEGY</p>
+        <p>© 2026 ENZO ERNOUX - EXCELLENCE & RETAIL STRATEGY</p>
     </footer>
 
 </body>
